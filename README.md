@@ -1,2 +1,1 @@
-# firstReactShoppingSites
-Created with CodeSandbox
+# 안녕하세요. 리액트로 쇼핑몰사이트를 처음 만들어보았습니다.
