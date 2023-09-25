@@ -1,0 +1,184 @@
+button {
+  background: none;
+}
+#announcementWrap {
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+#announcementWrap p {
+  width: 90%;
+  padding-left: 1%;
+  margin-right: 2%;
+  text-align: center;
+}
+.addCartBtn {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #393939;
+  border-radius: 4px;
+  margin: 4%;
+}
+.addCartBtn:hover {
+  background-color: black;
+  color: white;
+}
+#header {
+  align-items: center;
+  height: 60px;
+}
+.mb-3 {
+  margin-bottom: 0 !important;
+}
+#entranceWrap {
+  width: 100%;
+  height: 100vh;
+}
+#entranceWrap .bg {
+  width: 100%;
+  height: 70vh;
+  background: url("https://codingapple.com/wp-content/uploads/2022/04/bg.png")
+    no-repeat center center/cover;
+}
+#entranceWrap button {
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-15vh);
+}
+
+.card {
+  cursor: pointer;
+}
+
+#carousels1Wrap {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#carousels1Wrap li {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  list-style: none;
+}
+#carousels1Wrap li.active {
+  opacity: 1;
+}
+
+#carousels1Wrap button {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  width: 80px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+#eventWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: lightskyblue;
+  width: 100%;
+  height: 50px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 8px;
+  transition: all 5s;
+}
+#eventWrap .container {
+  position: absolute;
+  animation: moveLeft 5s linear 1s infinite forwards;
+}
+#eventWrap .container h1 {
+  font-weight: bold;
+  font-size: 14px;
+}
+#eventWrap button {
+  font-size: 18px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+@keyframes moveLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+#mainWrap {
+  position: relative;
+}
+#mainWrap #container {
+}
+#cartWrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+}
+#cartWrap .container {
+  position: absolute;
+  background-color: turquoise;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40vw;
+}
+#cartWrap .container .header {
+  margin: 5% 1% 2%;
+  display: flex;
+  justify-content: space-between;
+}
+#cartWrap .container .header h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#cartWrap .container .header .closeBtn {
+}
+#cartWrap .container table {
+  height: 80%;
+}
+#cartWrap .container table tbody tr td input {
+  width: 35%;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+#footer {
+  margin: 5% auto;
+  padding: 1% 5%;
+  text-align: center;
+  height: 10vh;
+}
+#footer .social-icons a:not(:last-child) {
+  margin-right: 5%;
+}
+#footer .social-icons a svg {
+  width: 25px;
+  height: 1.1rem;
+}
+#footer address {
+}
