@@ -55,21 +55,8 @@ button {
   cursor: pointer;
 }
 
-#carousels1Wrap {
-  width: 100%;
-  height: 300px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-#carousels1Wrap li {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  list-style: none;
+.carousel .carousel-inner img {
+  width: 100vw;
 }
 #carousels1Wrap li.active {
   opacity: 1;
